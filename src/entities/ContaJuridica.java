@@ -1,6 +1,6 @@
 package entities;
 
-public class ContaJuridica extends Conta{
+public final class ContaJuridica extends Conta{
 	
 	private Double limiteEspecial;
 	
@@ -31,7 +31,7 @@ public class ContaJuridica extends Conta{
 	
 	
 	@Override
-	public void saque(double valor) {
+	public final void saque(double valor) {
 		super.saque(valor);
 		saldo -= 2.0;
 		
